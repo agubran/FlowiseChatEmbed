@@ -51,6 +51,18 @@ export const Badge = (props: Props) => {
           {props.footer?.text ?? 'Powered by'}
           <a
             ref={liteBadge}
+            href="mailto:agubran.ai@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="lite-badge"
+            id="lite-badge"
+            style={{ 'font-weight': 'bold', color: props.footer?.textColor ?? props.poweredByTextColor ?? defaultTextColor }}
+          >
+            <span>&nbsp;'{'A.Gubran'}'</span>
+          </a>
+          {/* {props.footer?.text ?? 'Powered by'}
+          <a
+            ref={liteBadge}
             href={props.footer?.companyLink ?? 'https://flowiseai.com'}
             target="_blank"
             rel="noopener noreferrer"
@@ -59,7 +71,7 @@ export const Badge = (props: Props) => {
             style={{ 'font-weight': 'bold', color: props.footer?.textColor ?? props.poweredByTextColor ?? defaultTextColor }}
           >
             <span>&nbsp;{props.footer?.company ?? 'Flowise'}</span>
-          </a>
+          </a> */}
         </span>
       </Show>
       <Show when={props.footer?.showFooter === false}>
