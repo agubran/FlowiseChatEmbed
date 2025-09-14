@@ -51,7 +51,7 @@ export const Badge = (props: Props) => {
           {props.footer?.text ?? 'Powered by'}
           <a
             ref={liteBadge}
-            href="mailto:agubran.ai@gmail.com"
+            href="https://github.com/agubran"
             target="_blank"
             rel="noopener noreferrer"
             class="lite-badge"
