@@ -41,24 +41,23 @@ export const Badge = (props: Props) => {
   return (
     <>
       <Show when={props.footer?.showFooter === undefined || props.footer?.showFooter === null || props.footer?.showFooter === true}>
-        <span
-          class="w-full text-center px-[10px] pt-[6px] pb-[10px] m-auto text-[13px]"
+        <span class="w-full text-center px-[10px] pt-[6px] pb-[10px] m-auto text-[13px]"
           style={{
             color: props.footer?.textColor ?? props.poweredByTextColor ?? defaultTextColor,
             'background-color': props.badgeBackgroundColor ?? '#ffffff',
           }}
         >
-          {props.footer?.text ?? 'Powered by'}
+          {props.footer?.text ?? 'Contact me at '}
           <a
             ref={liteBadge}
-            href="https://github.com/agubran"
+            href="mailto:agubran.ai@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
             class="lite-badge"
             id="lite-badge"
             style={{ 'font-weight': 'bold', color: props.footer?.textColor ?? props.poweredByTextColor ?? defaultTextColor }}
           >
-            <span>&nbsp; {'A.Gubran'} </span>
+            <span>&nbsp;'{'Gmail'}'</span>
           </a>
           {/* {props.footer?.text ?? 'Powered by'}
           <a
